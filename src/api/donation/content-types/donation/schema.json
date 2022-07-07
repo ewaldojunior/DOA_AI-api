@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "identifier": {
-      "type": "uid",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
@@ -46,6 +42,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "categorie": {
+      "type": "string",
+      "required": true
     }
   }
 }
