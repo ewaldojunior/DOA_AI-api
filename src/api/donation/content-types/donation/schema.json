@@ -38,14 +38,20 @@
       "type": "boolean",
       "required": true
     },
-    "user": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "categorie": {
-      "type": "string",
-      "required": true
+    "users_liked": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tag.tag"
     }
   }
 }

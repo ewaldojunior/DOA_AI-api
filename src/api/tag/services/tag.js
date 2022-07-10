@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * favorite service.
+ * tag service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::favorite.favorite');
+module.exports = createCoreService('api::tag.tag');
